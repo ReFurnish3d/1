@@ -1,7 +1,7 @@
 {
   "name": "Refurnished-Builder",
-  "homepage": "https://creativecomputingicd.github.io/refurnished_final/",
-  "private": true,
+  "homepage": "https://legroa.github.io/refurnishedClone/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
