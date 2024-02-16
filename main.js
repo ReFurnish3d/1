@@ -190,7 +190,7 @@ landingPage.style.color = "#333";
 landingPage.style.backgroundColor = "white";
 
 const logoEmbed = document.createElement("embed");
-logoEmbed.src = "./pubic/logo.svg";
+logoEmbed.src = "./public/assets/logo.svg";
 logoEmbed.style.position = "absolute";
 logoEmbed.style.top = "calc(5% - 0px)";
 logoEmbed.style.left = "calc(5% - 0px)";
@@ -236,7 +236,7 @@ loudingscreeen.style.backgroundColor = "red";
 
 
 const logoICD = document.createElement("embed");
-logoICD.src = "./pubic/ICD-LOGO.png";
+logoICD.src = "./public/assets/ICD-LOGO.png";
 logoICD.style.position = "absolute";
 logoICD.style.top = "calc(95% - 0px)";
 logoICD.style.left = "calc(1% - 0px)";
@@ -284,7 +284,7 @@ uni.style.fontFamily = "Montserrat, Arial, sans-serif";
 uni.style.fontWeight = 500;
 
 const logoManual = document.createElement("embed");
-logoManual.src = "./pubic/manual v2.svg";
+logoManual.src = "./public/assets/manual v2.svg";
 logoManual.style.position = "center";
 logoManual.style.top = "calc(18% - 0px)";
 logoManual.style.left = "calc(23.5% - 0px)";
@@ -311,10 +311,30 @@ createProjectButton.onclick = function (event) {
     showProject();
 }
 
+const backbutton1 = document.createElement("button");
+backbutton1.id = "backbutton01";
+backbutton1.innerText = "back";
+backbutton1.style.padding = "10px 20px";
+backbutton1.style.fontSize = "18px";
+backbutton1.style.cursor = "pointer";
+backbutton1.style.backgroundColor = "#CCCCCC";
+backbutton1.style.color = "white";
+backbutton1.style.border = "none";
+backbutton1.style.borderRadius = "5px";
+backbutton1.style.position = "absolute";
+backbutton1.style.top = "calc(80% + 5px)";
+backbutton1.style.left = "calc(0% + 70px)";
+backbutton1.style.fontFamily = "Montserrat, sans-serif";
+backbutton1.onclick = function (event) {
+    event.preventDefault();
+    window.location.href = "https://creativecomputingicd.github.io/2024/"
+}
+
 landingPage.appendChild(title);
 landingPage.appendChild(names);
 landingPage.appendChild(uni);
 // landingPage.appendChild(manual);
+landingPage.appendChild(backbutton1);
 landingPage.appendChild(createProjectButton);
 document.body.appendChild(landingPage);
 
@@ -357,7 +377,7 @@ manualButton.style.color = "white";
 manualButton.style.border = "none";
 manualButton.style.borderRadius = "5px";
 manualButton.style.position = "absolute";
-manualButton.style.bottom = "20px";
+manualButton.style.bottom = "80px";
 manualButton.style.left = "20px";
 manualButton.style.fontFamily = "Montserrat, sans-serif";
 manualButton.onclick = function (event) {
@@ -367,7 +387,7 @@ manualButton.onclick = function (event) {
 threejsContainer.appendChild(manualButton);
 
 const backButton = document.createElement("button");
-backButton.id = "manual-button";
+backButton.id = "backbutton";
 backButton.innerText = "back";
 backButton.style.padding = "15px 30px";
 backButton.style.fontSize = "18px";
@@ -395,7 +415,7 @@ manualDiv.style.left = "calc(13% - 0px)";
 manualDiv.style.width = "70%";
 manualDiv.style.height = "75%";
 manualDiv.style.backgroundColor = "white";
-manualDiv.innerHTML = "<img src='./pubic/manual v2.svg' style='width: 90%; height: auto;' />";
+manualDiv.innerHTML = "<img src='./public/assets/manual v2.svg' style='width: 90%; height: auto;' />";
 threejsContainer.appendChild(manualDiv);
 
 let manualVisible = false;
