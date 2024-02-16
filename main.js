@@ -366,6 +366,26 @@ manualButton.onclick = function (event) {
 }
 threejsContainer.appendChild(manualButton);
 
+const backButton = document.createElement("button");
+backButton.id = "manual-button";
+backButton.innerText = "back";
+backButton.style.padding = "15px 30px";
+backButton.style.fontSize = "18px";
+backButton.style.cursor = "pointer";
+backButton.style.backgroundColor = "#666666";
+backButton.style.color = "white";
+backButton.style.border = "none";
+backButton.style.borderRadius = "5px";
+backButton.style.position = "absolute";
+backButton.style.bottom = "20px";
+backButton.style.left = "20px";
+backButton.style.fontFamily = "Montserrat, sans-serif"; 
+backButton.onclick = function (event) {
+  event.preventDefault();
+  window.location.href = "https://creativecomputingicd.github.io/2024/"
+}
+threejsContainer.appendChild(backButton);
+
 const manualDiv = document.createElement("div");
 manualDiv.id = "manual-div";
 manualDiv.style.display = "none";
